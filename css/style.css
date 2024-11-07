@@ -1,0 +1,12 @@
+.debug{
+  border: 1px solid red;
+}
+
+
+.logo img{
+  height: 60px;
+}
+
+header a{
+  text-decoration: none;
+}

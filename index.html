@@ -4,10 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css' integrity='sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ==' crossorigin='anonymous'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' integrity='sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==' crossorigin='anonymous'/>
   <link rel="stylesheet" href="./css/style.css">
   <title>Bootstrap Dashboard</title>
 </head>
 <body>
   
+  <header class="text-bg-dark d-flex align-items-center">
+    <div class="logo my-3 mx-2 col-3 col-lg-1">
+      <img src="./img/duck.png" alt="logo papera">
+    </div>
+    <div class="menu d-none d-lg-flex col-lg-7">
+        <ul class="d-flex list-unstyled gap-4 my-3 ">
+          <li><a class="text-secondary" href="#">Catalogo libri</a></li>
+          <li><a class="text-secondary" href="#">Anagrafia Utenti</a></li>
+          <li><a class="text-secondary" href="#">Storico Prestiti</a></li>
+          <li><a class="text-secondary" href="#">Help</a></li>
+        </ul>
+    </div>
+    <div class="hamburger col-8 d-lg-none">
+      <nav class="navbar navbar-dark bg-dark m-0">
+        <div class="container-fluid justify-content-end text-light">
+          <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="search d-none d-lg-block">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Cerca</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="cta d-flex justify-content-between align-items-center py-4">
+          <h2>Catalogo Libri</h2>
+          <button class="btn btn-lg btn-primary">Aggiungi libro</button>
+      </section>
+
+    </div>
+  </main>
+
 </body>
 </html>
